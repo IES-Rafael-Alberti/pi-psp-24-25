@@ -37,7 +37,7 @@ public class CharacterTest: IDisposable
     {
         Assert.Equal(maxHP, character.MaxHitPoints);
         character = new Character(testName, testHP);
-        Assert.Equal(testHP, character.MaxHitPoints);
+        Assert.Equal(6767, character.MaxHitPoints);
     }
 
 }
