@@ -1,6 +1,6 @@
 namespace PruebaInicial;
 
-public interface IITem
+public interface IItem
 {
     public void Apply(Character character);
 }

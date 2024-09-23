@@ -1,6 +1,6 @@
 namespace PruebaInicial;
 
-public abstract class Protection: IITem
+public abstract class Protection: IItem
 {
     public const int DefaultArmor = 5;
     

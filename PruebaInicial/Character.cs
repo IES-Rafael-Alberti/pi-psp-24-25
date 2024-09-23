@@ -14,7 +14,7 @@ public class Character
     public int BaseArmor { get; set; }
     public int Armor { get; set; }
 
-    private List<IITem> _inventory;
+    private List<IItem> _inventory;
 
     public Character(string name, int maxHitPoints = DefaultMaxHP, int baseDamage = DefaultBaseDamage, int baseArmor = DefaultBaseArmor)
     {
@@ -23,12 +23,12 @@ public class Character
         HitPoints = MaxHitPoints;
         BaseDamage = baseDamage;
         BaseArmor = baseArmor;
-        _inventory = new List<IITem>();
+        _inventory = new List<IItem>();
     }
 
     // reduced method declaration
-    public void AddItem(IITem item) => _inventory.Add(item);
-    public bool RemoveItem(IITem item) => _inventory.Remove(item);
+    public void AddItem(IItem item) => _inventory.Add(item);
+    public bool RemoveItem(IItem item) => _inventory.Remove(item);
     public int InventoryCount() => _inventory.Count;
     
     // normal method declaration

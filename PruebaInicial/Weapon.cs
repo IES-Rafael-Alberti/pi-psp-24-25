@@ -1,6 +1,6 @@
 namespace PruebaInicial;
 
-public abstract class Weapon: IITem
+public abstract class Weapon: IItem
 {
     public const int DefaultDamage = 10; 
     public string Name { get; set; }
