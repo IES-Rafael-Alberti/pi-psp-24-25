@@ -1,5 +1,6 @@
 # I.E.S. Rafael Alberti
 # Programación de servicios y procesos 24-25
+
 ## Pruebas inciales C#
 
 [![PruebaInicial Tests](https://github.com/IES-Rafael-Alberti/pi-psp-24-25/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/IES-Rafael-Alberti/pi-psp-24-25/actions/workflows/dotnet-desktop.yml)
@@ -11,8 +12,9 @@ Como referencia, este diagrama de clases se debe implementar en C#:
 
 ## Resolución
 
-En la carpeta PruebaInicial están las definiciones de las clases del diagrama: [Character](./PruebaInicial/Character.cs), [IItem](./PruebaInicial/IItem.cs), [Weapon](./PruebaInicial/Weapon.cs), [Protection](./PruebaInicial/Protection.cs), [Axe](PruebaInicial/Axe.cs), [Sword](PruebaInicial/Sword.cs), [Helmet](PruebaInicial/Helmet.cs), [Shield](PruebaInicial/Shield.cs).
+En la carpeta PruebaInicial están las definiciones de las clases del diagrama: [Character](PruebaInicial/Character.cs), [IItem](PruebaInicial/IItem.cs), [Weapon](PruebaInicial/Weapon.cs), [Protection](PruebaInicial/Protection.cs), [Axe](PruebaInicial/Axe.cs), [Sword](PruebaInicial/Sword.cs), [Helmet](PruebaInicial/Helmet.cs), [Shield](PruebaInicial/Shield.cs).
 
+Para realizar pruebas de forma manual, ejecutamos [Program.cs](PruebaInicial/Program.cs)
 
 ## Test unitarios
 
