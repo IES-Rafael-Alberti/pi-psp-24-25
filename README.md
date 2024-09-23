@@ -11,7 +11,7 @@ Como referencia, este diagrama de clases se debe implementar en C#:
 
 ## Resolución
 
-En la carpeta PruebaInicial están las definiciones de las clases del diagrama: [Character](PruebaInicial/Character.cs), [IItem](PruebaInicial/IItem.cs), [Weapon](PruebaInicial/Weapon.cs), [Protection](PruebaInicial/Protection.cs), [Axe](PruebaInicial/Axe.cs), [Sword](PruebaInicial/Sword.cs), [Helmet](PruebaInicial/Helmet.cs), [Shield](PruebaInicial/Shield.cs).
+En la carpeta PruebaInicial están las definiciones de las clases del diagrama: [Character](blob/main/PruebaInicial/Character.cs), [IItem](PruebaInicial/IItem.cs), [Weapon](PruebaInicial/Weapon.cs), [Protection](PruebaInicial/Protection.cs), [Axe](PruebaInicial/Axe.cs), [Sword](PruebaInicial/Sword.cs), [Helmet](PruebaInicial/Helmet.cs), [Shield](PruebaInicial/Shield.cs).
 
 
 ## Test unitarios
