@@ -13,6 +13,8 @@ Como referencia, este diagrama de clases se debe implementar en C#:
 
 ## Test unitarios
 
+El proyecto PruebaInicial.Tests define los [test unitarios](https://github.com/IES-Rafael-Alberti/pi-psp-24-25/blob/02335a068744933c1a35eb46601b41db27b51b9a/PruebaInicial.Tests/CharacterTest.cs) que se ejecutarán para comprobar el funcionamiento de nuestro sistema.
+
 ## GitHub Actions
 
 El archivo [dotnet-desktop.yml](https://github.com/IES-Rafael-Alberti/pi-psp-24-25/blob/9d79eda9d1db8906ff388e7ccd72191308295ce8/.github/workflows/dotnet-desktop.yml) define las acciones tras cada push al repositorio, incluyendo en este caso la ejecución de los test unitarios.
