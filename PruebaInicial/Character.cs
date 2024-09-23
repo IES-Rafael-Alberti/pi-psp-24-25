@@ -5,6 +5,7 @@ public class Character
     public const int DefaultMaxHP = 10;
     public const int DefaultBaseDamage = 1;
     public const int DefaultBaseArmor = 0;
+    
     public string Name { get; set; }
     public int MaxHitPoints { get; set; }
     public int HitPoints { get; set; }
@@ -25,11 +26,12 @@ public class Character
         _inventory = new List<IITem>();
     }
 
+    // reduced method declaration
     public void AddItem(IITem item) => _inventory.Add(item);
     public bool RemoveItem(IITem item) => _inventory.Remove(item);
-    
     public int InventoryCount() => _inventory.Count;
-
+    
+    // normal method declaration
     public int Attack()
     {
         ApplyInventory();
@@ -44,27 +46,45 @@ public class Character
 
     private void ApplyInventory()
     {
+        // initialize stats
         Damage = BaseDamage;
         Armor = BaseArmor;
+        // apply item effects
         foreach (var item in _inventory)
         {
             item.Apply(this);
         }
     }
 
-    void Heal(int amount)
+    public void Heal(int amount)
     {
-        HitPoints += amount;
+        // controls HP not past MaxHP
+        if (amount + HitPoints > MaxHitPoints)
+            HitPoints = MaxHitPoints;
+        else
+            HitPoints += amount;
     }
 
-    void ReceiveDamage(int amount)
+    public void ReceiveDamage(int amount)
     {
-        HitPoints -= amount;
+        // controls HP not less than 0
+        if (HitPoints - amount < 0)
+            HitPoints = 0;
+        else
+            HitPoints -= amount;
     }
-
     
+    // for manual testing purposes
     public override string ToString()
     {
-        return $"Character: {Name} | Max HitPoints: {MaxHitPoints}";
+        string result = $"Character: {Name} | HP: {HitPoints}/{MaxHitPoints}\n";
+        result += "  Inventory:\n";
+        foreach (var item in _inventory)
+        {
+            result += $"    {item}\n";
+        }
+        result += $"  Attack: {Attack()}\n";
+        result += $"  Defense: {Defense()}\n";
+        return result;
     }
 }

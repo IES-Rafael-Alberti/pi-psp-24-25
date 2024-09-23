@@ -11,6 +11,9 @@ Como referencia, este diagrama de clases se debe implementar en C#:
 
 ## Resolución
 
+En la carpeta PruebaInicial están las definiciones de las clases del diagrama: [Character](https://github.com/IES-Rafael-Alberti/pi-psp-24-25/blob/1eb03fa1491a4dcacdeead0378bcd0677ce167de/PruebaInicial/Character.cs), [IItem](), [Weapon](), [Protection](), [Axe](), [Sword](), [Helmet](), [Shield]().
+
+
 ## Test unitarios
 
 El proyecto PruebaInicial.Tests define los [test unitarios](https://github.com/IES-Rafael-Alberti/pi-psp-24-25/blob/02335a068744933c1a35eb46601b41db27b51b9a/PruebaInicial.Tests/CharacterTest.cs) que se ejecutarán para comprobar el funcionamiento de nuestro sistema.
