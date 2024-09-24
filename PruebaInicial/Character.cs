@@ -74,6 +74,8 @@ public class Character
             HitPoints -= amount;
     }
     
+    
+    
     // for manual testing purposes
     public override string ToString()
     {
@@ -87,4 +89,6 @@ public class Character
         result += $"  Defense: {Defense()}\n";
         return result;
     }
+    
+    
 }
