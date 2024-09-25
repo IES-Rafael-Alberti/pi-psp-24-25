@@ -68,10 +68,10 @@ public class CharacterTest: IDisposable // IDisposable for cleaning purposes
         Assert.Equal(Shield.DefaultArmor + Helmet.DefaultArmor + _character.BaseArmor, _character.Defense());
         var newItem = new Axe();
         _character.AddItem(newItem);
-        Assert.Equal(56, _character.InventoryCount());
+        Assert.Equal(5, _character.InventoryCount());
         Assert.Equal(Axe.DefaultDamage*2 + Sword.DefaultDamage + _character.BaseDamage, _character.Attack());
         _character.RemoveItem(newItem);
-        Assert.Equal(4, _character.InventoryCount());
+        Assert.Equal(_testItems, _character.InventoryCount());
         Assert.Equal(Axe.DefaultDamage + Sword.DefaultDamage + _character.BaseDamage, _character.Attack());
         _character.AddItem(new Shield());
         Assert.Equal(Shield.DefaultArmor*2 + Helmet.DefaultArmor + _character.BaseArmor, _character.Defense());
